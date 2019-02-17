@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_items"
+            android:icon="@drawable/ic_action_favorite_border"
+            android:title="@string/page_my_items" />
+        <item
+            android:id="@+id/nav_my_mirrors"
+            android:icon="@drawable/ic_action_content_copy"
+            android:title="@string/page_my_mirrors" />
+        <item
+            android:id="@+id/nav_global"
+            android:icon="@drawable/ic_action_cloud_queue"
+            android:title="@string/page_global" />
+    </group>
+
+</menu>

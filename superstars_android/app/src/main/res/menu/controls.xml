@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item-->
+        <!--android:id="@+id/app_bar_search"-->
+        <!--app:actionViewClass="android.widget.SearchView"-->
+        <!--android:icon="@drawable/ic_action_search"-->
+        <!--android:orderInCategory="1"-->
+        <!--android:title=""-->
+        <!--app:showAsAction="always" />-->
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="2"
+        android:icon="@drawable/ic_action_search"
+        android:title=""
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/action_add"
+        android:orderInCategory="2"
+        android:icon="@drawable/ic_action_add"
+        android:title=""
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_renew"
+        android:orderInCategory="3"
+        android:icon="@drawable/ic_action_autorenew"
+        android:title=""
+        app:showAsAction="always"/>
+
+
+    <!--<item-->
+        <!--android:id="@+id/action_reconnect"-->
+        <!--android:orderInCategory="2"-->
+        <!--android:title="@string/action_settings"-->
+        <!--android:icon="@drawable/ic_autorenew_white_24dp"-->
+        <!--app:showAsAction="ifRoom" />-->
+</menu>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Superstars</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="page_my_items">Items</string>
+    <string name="page_my_mirrors">Mirrors</string>
+    <string name="page_global">All items</string>
+</resources>

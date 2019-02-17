@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rowChild"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingLeft="15dp"
+    android:paddingBottom="20dp"
+    android:paddingRight="15dp"
+    android:paddingTop="20dp"
+
+    android:background="@color/colorChildItem"
+    android:focusable="false"
+    >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="aaaaaaaa"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorGray"
+        android:textSize="24sp"
+
+        android:layout_weight="3"
+
+        android:focusable="false"
+        />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="10"
+        android:textAlignment="center"
+        android:textColor="@color/colorGray"
+        android:textSize="24sp"
+
+        android:layout_weight="5"
+
+        android:focusable="false"
+        />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="15.02.2017"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/colorGray"
+        android:textSize="24sp"
+
+        android:layout_weight="3"
+
+        android:focusable="false"
+        />
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rowGroup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:focusable="false"
+    >
+
+    <TextView
+        android:paddingLeft="30dp"
+
+        android:id="@+id/text"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textAlignment="center"
+
+        android:text="TextView"
+
+        android:textColor="@color/colorGray"
+        android:textSize="26sp"
+
+        android:focusable="false"/>
+
+    <TextView
+
+        android:id="@+id/avgRating"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textAlignment="center"
+
+        android:text="10"
+
+        android:textColor="@color/colorGray"
+        android:textSize="26sp"
+
+        android:focusable="false"/>
+
+</LinearLayout>

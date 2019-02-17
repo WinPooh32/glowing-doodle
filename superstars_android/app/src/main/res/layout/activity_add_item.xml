@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="winpooh32.superstars.ActivityAddItem">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:shrinkColumns="1"
+        android:layout_weight="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hashRow"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Table hash:"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:maxLines="1"
+                android:textSize="19sp"
+                />
+            <TextView
+                android:id="@+id/itemHashValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ADSRMDSIRJADSRMDSIRJ"
+                android:textAlignment="viewEnd"
+                android:textIsSelectable="true"
+                android:textSize="19sp"
+                android:layout_gravity="end"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Device:"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:textSize="19sp"/>
+            <TextView
+                android:id="@+id/deviceValue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="testtest"
+                android:textAlignment="viewEnd"
+                android:textIsSelectable="true"
+                android:textSize="19sp"/>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/parentTableRow"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Parent hash:"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:textSize="19sp"/>
+
+            <EditText
+                android:id="@+id/parentHashValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:hint="parent table hash"
+                android:inputType="textCapCharacters"
+                android:digits="0123456789QWERTZUIOPASDFGHJKLYXCVBNM"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:textSize="15sp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Rating"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:textSize="19sp"/>
+
+            <LinearLayout
+                android:layout_weight="1">
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:max="10"
+                    android:progress="8"
+                    android:layout_gravity="center_vertical"
+
+                    android:layout_marginStart="-7dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="0"
+                    android:text="8"
+                    android:textSize="19sp"
+                    android:minWidth="24sp"
+                    android:textAlignment="textEnd"/>
+            </LinearLayout>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Review:"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:textSize="19sp"/>
+
+            <EditText
+                android:id="@+id/reviewValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="your review"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:minLines="5"
+                android:maxLength="1000"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Tags:"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:textSize="19sp"/>
+
+            <EditText
+                android:id="@+id/tagsValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="example1, tag2"
+                android:inputType="textMultiLine"
+                android:maxLines="2"
+                android:minLines="2" />
+
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0"
+        >
+        <Button
+            android:id="@+id/addCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onCancel"
+            android:text="Cancel" />
+        <Button
+            android:id="@+id/addCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onCreateItem"
+            android:text="Create" />
+    </LinearLayout>
+
+
+</LinearLayout>
